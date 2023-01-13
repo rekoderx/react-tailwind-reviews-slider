@@ -19,7 +19,7 @@ const Review = ({ reviews }) => {
   };
 
   const surpriseMe = () => {
-    const randomIndex = Math.floor(Math.random() * 4);
+    const randomIndex = Math.floor(Math.random() * reviews.length);
     setCardState(randomIndex);
   };
 
