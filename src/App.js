@@ -1,24 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import Review from "./Review";
+import reviews from "./data";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="flex flex-col justify-center items-center w-screen h-screen max-w-4xl mx-auto">
+      <h2 className="capitalize text-4xl font-bold text-gray-700">
+        <span className="text-blue-400">/</span> reviews
+      </h2>
+      <Review reviews={reviews} />
+    </main>
   );
 }
 
